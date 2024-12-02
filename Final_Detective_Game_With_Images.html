@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detective Game: The Case of the Missing Artifact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .options {
+            margin-top: 20px;
+        }
+        .options a {
+            display: block;
+            margin: 15px 0;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .options a:hover {
+            background: #0056b3;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detective Game: The Case of the Missing Artifact</h1>
+    <div id="start" class="section">
+        <p>Welcome, Detective! The golden lion statue has been stolen from the Grandview Museum. The building is locked down, and it's your job to solve the mystery.</p>
+        <p>The suspects are:</p>
+        <ul>
+            <li><strong>Ms. Olivia</strong> - The curator, last seen near the exhibit.</li>
+            <li><strong>Mr. James</strong> - The security guard, acting strangely today.</li>
+            <li><strong>Dr. Lucy</strong> - The historian, overly interested in the artifact.</li>
+        </ul>
+        <p>Can you uncover the clues and solve the case? Click below to begin!</p>
+        <div class="options">
+            <a href="#clue">Start Investigating</a>
+        </div>
+    </div>
+
+    <div id="clue" class="section">
+        <h2>Your First Clue</h2>
+        <img src="/mnt/data/A_cartoon-style_image_of_a_detective_in_a_trench_c.png" alt="Detective Investigating Display Case">
+        <p>In the museum lobby, you see:</p>
+        <ul>
+            <li>A locked display case, its glass cracked.</li>
+            <li>Muddy footprints leading to the storage room.</li>
+            <li>A broken security camera near the entrance.</li>
+        </ul>
+        <p>What will you investigate first?</p>
+        <div class="options">
+            <a href="#olivia">Ask Ms. Olivia</a>
+            <a href="#james">Interview Mr. James</a>
+            <a href="#footprints">Investigate the Muddy Footprints</a>
+            <a href="#camera">Check the Broken Security Camera</a>
+        </div>
+    </div>
+
+    <div id="olivia" class="section">
+        <h2>Talking to Ms. Olivia</h2>
+        <img src="https://media.giphy.com/media/l2JhrhAtnJSDNJ2py/giphy.gif" alt="Talking to Olivia">
+        <p>Ms. Olivia looks upset. "I can't believe it! I was in my office when I heard a noise. When I came back, the statue was gone!"</p>
+        <p>She mentions that Dr. Lucy spent a long time studying the statue earlier in the day.</p>
+        <p>What do you want to do next?</p>
+        <div class="options">
+            <a href="#exhibit">Investigate the Exhibit Room</a>
+            <a href="#suspects">Ask Olivia if she suspects anyone</a>
+            <a href="#clue">Go Back to the Lobby</a>
+        </div>
+    </div>
+
+    <div id="james" class="section">
+        <h2>Interviewing Mr. James</h2>
+        <img src="/mnt/data/A_colorful_cartoon-style_image_of_a_nervous_securi.png" alt="Security Guard">
+        <p>Mr. James looks nervous. "I went to grab coffee, and when I came back, the camera was broken. I heard noises, but I thought it was the air conditioning."</p>
+        <p>He mentions seeing muddy shoes near the staff entrance earlier.</p>
+        <p>What do you want to do next?</p>
+        <div class="options">
+            <a href="#camera">Inspect the Broken Camera</a>
+            <a href="#footprints">Investigate the Muddy Footprints</a>
+            <a href="#clue">Go Back to the Lobby</a>
+        </div>
+    </div>
+
+    <div id="footprints" class="section">
+        <h2>Following the Muddy Footprints</h2>
+        <img src="/mnt/data/A_fun_and_colorful_cartoon-style_image_of_muddy_fo.png" alt="Muddy Footprints">
+        <p>The footprints lead to the storage room. The door is slightly ajar, and inside, you find a piece of fabric caught on a nail.</p>
+        <p>The fabric looks like it matches Dr. Lucy's coat.</p>
+        <p>What do you want to do next?</p>
+        <div class="options">
+            <a href="#olivia">Ask Ms. Olivia about the footprints</a>
+            <a href="#guess">Make Your Guess</a>
+            <a href="#clue">Go Back to the Lobby</a>
+        </div>
+    </div>
+
+    <div id="guess" class="section">
+        <h2>Who Stole the Golden Lion Statue?</h2>
+        <img src="https://media.giphy.com/media/3o7TKPdUkkbRz4zN8k/giphy.gif" alt="Guess the Culprit">
+        <p>You've gathered all the clues. Now it's time to make your guess. Who do you think is the thief?</p>
+        <div class="options">
+            <a href="#olivia-reveal">Ms. Olivia</a>
+            <a href="#james-reveal">Mr. James</a>
+            <a href="#lucy-reveal">Dr. Lucy</a>
+        </div>
+    </div>
+
+    <div id="lucy-reveal" class="section">
+        <h2>Dr. Lucy: The Thief!</h2>
+        <img src="https://media.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif" alt="Caught!">
+        <p>Dr. Lucy was the thief! She tampered with the camera and used the staff entrance to sneak out. The muddy footprints and the fabric in the storage room gave her away.</p>
+        <p>Congratulations, Detective! You solved the case!</p>
+    </div>
+</body>
+</html>
